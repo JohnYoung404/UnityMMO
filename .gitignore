@@ -53,8 +53,6 @@ UnityMMO.VC.db
 Assets/UGUI-Editor/Res/Preview/*
 Assets/UGUI-Editor/Res/Preview.meta
 .vscode/settings.json
-Assets/AssetBundleRes/*
-Assets/AssetBundleRes.meta
 Assets/LuaFramework/*
 Assets/LuaFramework.meta
 Assets/XLua/Gen/*
