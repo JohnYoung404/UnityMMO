@@ -32,3 +32,31 @@ server only for Linux;
 19.09.07：后端增加 buff:火，毒，冰冻，晕眩，吸血，扣属性(防御、攻击等)，沉默。详见 BuffActions.lua。前端目前只加了吸血和晕眩的效果。  
 19.09.18：增加各平台的图片格式管理工具，针对不同用途的图片使用不同深度，比如安卓平台时 ui 文件夹里的图片用 ETC2_RGBA8，模型图片用 ETC_RGB8 等等，在 iOS 就用 ASTC 系列的格式。详细见 unity 编辑器菜单：TextureFormatter   
 19.10.21：最近忙工作上的事，而且想要憋个大招，所以未来一个月进度会慢下来，先搞下小 ui 界面。  
+
+# JohnYoung：
+
+其他部署问题：
+
+* yum install mysql-server失败：
+CentOS自带个啥db,用这个解决了：
+```
+yum安装mysql-server没有可用包问题解决方法：
+
+step 1: wget http://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm
+
+step 2: rpm -ivh mysql-community-release-el7-5.noarch.rpm
+
+经过以上两个步骤后再次执行：yum install mysql-server 命令就可以成功安装了。
+```
+
+* 启动mysql
+```
+service mysqld restart
+```
+
+* mysql 操作
+
+create DATABASE UnityMMOAccount;
+create DATABASE UnityMMOGame;
+mysql -u root UnityMMOAccount < UnityMMOAccount.sql
+mysql -u root UnityMMOGame < UnityMMOGame

@@ -26,7 +26,7 @@ skynet.start(function()
 		port = 3306,
 		database = "UnityMMOAccount",
 		user = "root",
-		password = "123456",
+		password = "",
 		name = ".AccountDBServer",
 	})
 
@@ -36,7 +36,7 @@ skynet.start(function()
 		port = 3306,
 		database = "UnityMMOGame",
 		user = "root",
-		password = "123456",
+		password = "",
 		name = ".GameDBServer",
 	})
 
